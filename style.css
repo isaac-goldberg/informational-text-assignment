@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --background-theme: #333;
+}
+
+body {
+    background-color: var(--background-theme) !important;
+    color: #ccc !important;
+    font-family: Inter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+    text-align: center;
+}
+
+.page-container {
+    margin: 10px 10% 0 10%;
+}
