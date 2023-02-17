@@ -1,18 +1,128 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Isaac G - Informational Text: How to create a website from scratch</title>
-    
-        <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/1075539648346062879/1075541275362721843/73368374.png">
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <div class="page-container">
-            <h3>How to create a website and host it publicly</h3>
+<head>
+    <title>Isaac G - Informational Text: How to create a website from scratch and host it publicly</title>
 
-            hello world
+    <link rel="icon" type="image/x-icon"
+        href="https://media.discordapp.net/attachments/1075539648346062879/1075541275362721843/73368374.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="assets/prism.css">
+</head>
+
+<body class="language-html">
+    <div class="header-container">
+        <div class="header-background"></div>
+        <div class="heading">
+            <h1>How to create a website from scratch and host it publicly</h1>
+
+            <p class="author">
+                By Isaac Goldberg
+                <br />
+                Last Updated: 2/16/2023
+            </p>
         </div>
-    </body>
+
+        <p class="description">
+            Hi! This is an informational article to instruct beginner web developers on
+            creating their first website from
+            scratch, and using GitHub to host it publicly.
+        </p>
+
+        <div class="note">
+            <p class="note-text">
+                Note: This article only covers the bare minimum for creating a working website from HTML. For more
+                advanced websites, <a href="https://hackr.io/blog/web-development-frameworks">here is an article by
+                    hackr.io</a> on the best frameworks for building modern web
+                applications, and there are plenty of tutorials you can watch on YouTube for more info!
+            </p>
+        </div>
+    </div>
+
+    <div class="article-container">
+        <h1>Step 1: Create a GitHub Account</h1>
+        <p>
+            GitHub is a free platform owned by Microsoft designed for developers to
+            build, manage, and deliver software to the public. For more information, visit their <a
+                href="https://github.com/about">about page</a>.
+
+            <br />
+            <br />
+            Click the GitHub button below to go to the home page and sign up.
+            If you already have a GitHub account, you can sign in instead.
+        </p>
+
+        <a href="https://github.com">
+            <img class="image github"
+                src="https://media.discordapp.net/attachments/1075539648346062879/1075896042316365884/GitHub-Emblem.png">
+        </a>
+
+        <div class="footer"></div>
+
+        <h1>Step 2: Create a Code Repository in GitHub</h1>
+        <p>
+            A repository is an archive of the code in your project you are working on.
+            It allows you to easily update your code and view the history of changes.
+
+            <br />
+            <br />
+            Once you have signed into the GitHub dashboard, click the green "New" button to create a repository:
+        </p>
+
+        <img class="image create-repository"
+            src="https://media.discordapp.net/attachments/1075539648346062879/1075540989567053954/Screenshot_2023-02-15_at_2.14.57_PM.png">
+
+        <p>
+            Then fill out the following prompt with your info:
+        <ul>
+            <li>Repository name - most likely the title of your website</li>
+            <li>Description - optional, if you want to provide a description of your website</li>
+            <li><strong>Must select the "Public" option</strong> - otherwise your website can't be hosted publicly</li>
+            <li>Finally, scroll down and click "Create repository"</li>
+        </ul>
+        </p>
+
+        <img class="image repo-info"
+            src="https://media.discordapp.net/attachments/1075539648346062879/1076028849692872805/Screenshot_2023-02-16_at_10.29.13_PM.png">
+
+        <h1>Step 3: Initialize the Repository With a New File</h1>
+        <p>
+            The next part is a little less intuitive. You need to create the first file for your repository,
+            which is done by clicking the blue link "creating a new file", as highlighted below:
+        </p>
+        <img class="image init-repo"
+            src="https://media.discordapp.net/attachments/1075539648346062879/1076032271313805332/Screenshot_2023-02-16_at_10.47.29_PM.png">
+
+        <p>
+            This will bring up a form where you can edit your new file. First give the file a name, for your website
+            <strong>it must be "index.html"</strong>.
+            Your index.html file is the entry file to your website, and will contain the code to render the first page
+            that users see.
+        </p>
+        <img class="image indexhtml"
+            src="https://media.discordapp.net/attachments/1075539648346062879/1076034270067425330/Screenshot_2023-02-16_at_10.55.15_PM.png">
+
+        <h1>Step 4: Start Writing HTML Code</h1>
+        <p>
+            Now it's time to start coding!
+
+            Your first line should be this:
+        </p>
+        <pre>
+        <code>
+            &#60;!DOCTYPE html&#62;
+            &#60;html&#62;&#60;/html&#62;
+            &#60;p&#62;foo bar&#60;/p&#62;
+        </code>
+        </pre>
+        <p>
+            This tag simply specifies that the document type is HTML.
+        </p>
+    </div>
+
+    <script src="assets/prism.js"></script>
+</body>
+
 </html>

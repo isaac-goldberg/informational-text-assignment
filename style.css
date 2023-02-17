@@ -1,20 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
 
 :root {
-    --background-theme: #333;
+    --background-theme: #222;
+    --transition: 0.2s ease;
+    --app-margin: 10px 10% 0 10%;
 }
 
 body {
     background-color: var(--background-theme) !important;
-    color: #ccc !important;
+    color: #ddd !important;
     font-family: Inter;
+    margin: 0;
+    font-weight: 400;
+}
+
+.article-container {
+    margin: var(--app-margin);
+    margin-bottom: 30px;
+}
+
+.header-container {
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 20px 0;
+}
+
+.header-background {
+    background-image: url("https://media.discordapp.net/attachments/1075539648346062879/1075899910773276682/istockphoto-1224500457-170667a.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -999;
+    filter: brightness(0.15);
+    margin-left: 0;
+    padding-left: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: white !important;
+}
+
+.heading {
     text-align: center;
 }
 
-.page-container {
+.heading h1 {
+    margin-bottom: 0;
+}
+
+.header-container .description {
+    margin: var(--app-margin);
+}
+
+.header-container .note {
+    margin: var(--app-margin);
+}
+
+.app {
     margin: 10px 10% 0 10%;
 }
+
+a {
+    color: #00ccff;
+    text-decoration: none;
+    transition: var(--transition);
+}
+a:hover {
+    filter: brightness(0.7);
+}
+
+.note {
+    padding: 10px 20px;
+    background-color: rgba(126, 101, 0, 0.6);
+    border: 1px solid #ffcc00;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+strong {
+    font-weight: 900;
+}
+
+p:not(.heading):not(.author):not(.description):not(.note-text), .image {
+    margin-left: 30px;
+}
+
+pre {
+    background-color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 30px;
+}
+
+code {
+    font-family: "Roboto Mono";
+    border-radius: 5px;
+    text-shadow: none !important;
+    white-space: pre-wrap;
+}
+
+/* ------------------ IMAGES ------------------ */
+.image {
+    border-radius: 15px;
+    width: auto;
+}
+.image.github {
+    background-color: #555;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 20px !important;
+    transition: var(--transition);
+}
+.image.github:active {
+    transform: scale(1.2);
+}
+
+.image.create-repository {
+    height: 200px;
+}
+
+.image.repo-info {
+    height: 400px;
+}
+
+.image.init-repo {
+    height: 300px;
+}
+.image.indexhtml {
+    height: 300px;
+}
+/* ----------------- END IMAGES --------------- */
