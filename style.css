@@ -35,9 +35,13 @@ body {
     position: absolute;
     top: 0;
     z-index: -999;
-    filter: brightness(0.15);
+    filter: brightness(0.2);
     margin-left: 0;
     padding-left: 0;
+}
+
+.author {
+    color: #bbb;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,16 +95,14 @@ p:not(.heading):not(.author):not(.description):not(.note-text), .image {
 
 pre {
     background-color: black !important;
-    padding: 0 !important;
-    margin: 0 !important;
     margin-left: 30px;
+    padding: 5px 10px !important;
 }
 
 code {
     font-family: "Roboto Mono";
     border-radius: 5px;
     text-shadow: none !important;
-    white-space: pre-wrap;
 }
 
 /* ------------------ IMAGES ------------------ */
