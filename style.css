@@ -46,6 +46,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: white !important;
+    margin: 40px 0;
+}
+
+ul, ol {
+    margin: 20px 0;
+}
+
+ul li, ol li {
+    margin: 10px 0;
 }
 
 .heading {
@@ -62,10 +71,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-container .note {
     margin: var(--app-margin);
-}
-
-.app {
-    margin: 10px 10% 0 10%;
 }
 
 a {
@@ -89,7 +94,13 @@ strong {
     font-weight: 900;
 }
 
-p:not(.heading):not(.author):not(.description):not(.note-text), .image {
+pre:not(.inline) {
+    margin-left: 30px !important;
+}
+
+p:not(.heading):not(.author):not(.description):not(.note-text),
+.image
+{
     margin-left: 30px;
 }
 
@@ -100,7 +111,7 @@ pre {
 }
 
 code {
-    font-family: "Roboto Mono";
+    font-family: "Roboto Mono" !important;
     border-radius: 5px;
     text-shadow: none !important;
 }
@@ -132,7 +143,40 @@ code {
 .image.init-repo {
     height: 300px;
 }
+
 .image.indexhtml {
+    height: 300px;
+}
+
+.image.website-render {
+    height: 500px;
+}
+
+.image.commit-file {
+    height: 500px;   
+}
+
+.image.settings-button {
+    height: 200px;
+}
+
+.image.pages-tab {
+    height: 450px;
+}
+
+.image.select-branch {
+    height: 400px;
+}
+
+.image.save-branch {
+    height: 400px;
+}
+
+.image.site-live {
+    height: 300px;
+}
+
+.image.website-render-public {
     height: 300px;
 }
 /* ----------------- END IMAGES --------------- */

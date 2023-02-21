@@ -38,8 +38,10 @@
 
         <div class="note">
             <p class="note-text">
-                Note: This article only covers the bare minimum for creating a working website from HTML. If you're looking to build a more
-                advanced website using more advanced software engineering techniques, that is out of the scope of this article.
+                Note: This article only covers the bare minimum for creating a working website from HTML. If you're
+                looking to build a more
+                advanced website using more advanced software engineering techniques, that is out of the scope of this
+                article.
                 However, <a href="https://hackr.io/blog/web-development-frameworks">here's an article by hackr.io</a>
                 on the best frameworks for building modern web applications!
             </p>
@@ -66,7 +68,7 @@
 
         <div class="footer"></div>
 
-        <h1>Step 2: Create a Code Repository in GitHub</h1>
+        <h1>Step 2: Create a Code Repository on GitHub</h1>
         <p>
             A repository is an archive of the code in your project you are working on.
             It allows you to easily update your code and view a history of the changes you've made.
@@ -81,12 +83,12 @@
 
         <p>
             Then fill out the following prompt with your info:
-        <ul>
+        <ol>
             <li>Repository name - most likely the title of your website</li>
             <li>Description - optional, if you want to provide a description of your website</li>
             <li><strong>Must select the "Public" option</strong> - otherwise your website can't be hosted publicly</li>
             <li>Finally, scroll down and click "Create repository"</li>
-        </ul>
+        </ol>
         </p>
 
         <img class="image repo-info"
@@ -109,17 +111,168 @@
         <img class="image indexhtml"
             src="https://media.discordapp.net/attachments/1075539648346062879/1076034270067425330/Screenshot_2023-02-16_at_10.55.15_PM.png">
 
-        <h1>Step 4: Start Writing HTML Code</h1>
+        <h1>Step 4: HTML Introduction</h1>
         <p>
-            Now it's time to start coding!
+            Now it's time to start coding! Here's a very basic introduction to HTML:
 
-            Your first line should be this:
+        <ul>
+            <li>
+                HTML is composed of "elements". Here are the steps to follow to create an element:
+            </li>
+            <ul>
+                <li>
+                    Make an opening tag.
+                    <br />
+                    The opening tag is composed of a less than sign (&#60;),
+                    the element name, and a greater than sign (&#62;).
+                </li>
+                <li>
+                    Type the text you want the element to show on the web page.
+                </li>
+                <li>
+                    Make a closing tag.
+                    <br />
+                    The closing tag is the same as the opening tag,
+                    with the same element name, but with a backslash
+                    in front.
+                </li>
+                <li>
+                    The following example defines a "title" element with text "hello world":
+                    <br />
+                    &#60;title&#62;hello world&#60;/title&#62;
+                </li>
+            </ul>
+            <li>
+                The HTML page should start with this tag to specify that the document type is HTML:
+
+                <pre class="inline"><code>&#60;!DOCTYPE html&#62;</code></pre>
+
+                This is a special element and does not require a closing tag.
+            </li>
+            <li>
+                Next, your entire web page should be surrounded by an "html" tag. It's just the top-level
+                element for an HTML page.
+            </li>
+            <li>
+                Within the html tag you should have a "head" element and a "body" element.
+                <ul>
+                    <li>
+                        The head element will contain information about your page that the browser uses.
+                        For example, a "title" element within the head will define the title of your website that is
+                        displayed on the tabs of your browser.
+                        You can also add the icon that the browser displays on the tab, next to the title.
+                    </li>
+                    <li>
+                        The body element is the most important.
+                        It will contain all of the rest of the code you write to render
+                        text, images, and more on the website.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+
+        <h1>Step 5: Start Writing HTML!</h1>
+        <p>
+            With the above steps in mind, here's what your index.html file should look like
+            with its most basic HTML structure (you can just copy and paste this code
+            into the text area of the index.html file you're creating).
+            Also notice the indents before each nested element.
+            It's very good practice to format your code with indents to make it more readable.
         </p>
         <pre><code>&#60;!DOCTYPE html&#62;
-&#60;html&#62;&#60;/html&#62;
-&#60;p&#62;foo bar&#60;/p&#62;</code></pre>
+
+&#60;html&#62;
+    &#60;head&#62;
+    &#60;/head&#62;
+
+    &#60;body&#62;
+    &#60;/body&#62;
+&#60;/html&#62;</code></pre>
+
         <p>
-            This tag simply specifies that the document type is HTML.
+            Now, add a "title" element within the head tag, and an "h1" and a "p" within the body tag.
+            "h1" stands for header 1 and will render a bold header with larger font size,
+            while "p" stands for paragraph and will render smaller sized text.
+            You can make the text within the elements whatever you want!
+        </p>
+
+        <pre><code>&#60;!DOCTYPE html&#62;
+
+&#60;html&#62;
+    &#60;head&#62;
+        &#60;title&#62;
+            A Cool Website
+        &#60;/title&#62;
+    &#60;/head&#62;
+
+    &#60;body&#62;
+        &#60;h1&#62;My Home Page&#60;/h1&#62;
+
+        &#60;p&#62;Hello world!&#60;/p&#62;
+    &#60;/body&#62;
+&#60;/html&#62;</code></pre>
+
+        <p>
+            The above code will render a website that looks like this (notice the name of the tab at the top!):
+        </p>
+
+        <img class="image website-render" src="https://media.discordapp.net/attachments/1075539648346062879/1077364582676443196/Screenshot_2023-02-20_at_3.02.00_PM.png">
+    
+        <h1>Step 6: Publish Your Website on GitHub!</h1>
+        
+        <p>
+            Once you've finished with the code you're putting in your index.html file,
+            scroll to the bottom and click the green "Commit new file" button.
+        </p>
+
+        <img class="image commit-file" src="https://media.discordapp.net/attachments/1075539648346062879/1077366567890853949/Screenshot_2023-02-20_at_3.09.29_PM.png">
+
+        <p>
+            The file will be added to your project. Next click on the "Settings" tab of your repository:
+        </p>
+
+        <img class="image settings-button" src="https://media.discordapp.net/attachments/1075539648346062879/1077367487986941982/Screenshot_2023-02-20_at_3.13.18_PM.png">
+
+        <p>Then scroll down the settings page and click on the "Pages" tab:</p>
+
+        <img class="image pages-tab" src="https://media.discordapp.net/attachments/1075539648346062879/1077367854208389201/Screenshot_2023-02-20_at_3.14.46_PM.png">
+
+        <p>
+            The next step is to deploy your code with GitHub Pages, which is the service
+            that GitHub provides for people to publish their code. First, under the
+            section that says "Branch", click on the button that currently says "None"
+            (it says that because nothing is currently being published).
+            This will bring up a dropdown, and then select the "Main" branch, which is
+            simply the code that you just added in your index.html file.
+        </p>
+
+        <img class="image select-branch" src="https://media.discordapp.net/attachments/1075539648346062879/1077368853195128862/Screenshot_2023-02-20_at_3.18.16_PM.png">
+
+        <p>
+            Then click the "Save" button that will appear (ignore the button that says "/ (root)").
+        </p>
+
+        <img class="image save-branch" src="https://media.discordapp.net/attachments/1075539648346062879/1077369557544620112/Screenshot_2023-02-20_at_3.21.33_PM.png">
+
+        <p>
+            Now, it will take a few minutes for your website to deploy, and it will say
+            "Your GitHub Pages site is currently being built from the main branch."
+            <br /><br />
+            Reload after a few minutes, and this is what it should look like once your site is deployed:
+        </p>
+
+        <img class="image site-live" src="https://media.discordapp.net/attachments/1075539648346062879/1077371179972702208/Screenshot_2023-02-20_at_3.27.45_PM.png">
+
+        <p>
+            Click on the link to your website, and you're done!
+            Here's what the website might look like, but this time, notice the URL:
+        </p>
+
+        <img class="image website-render-public" src="https://media.discordapp.net/attachments/1075539648346062879/1077371880069148762/Screenshot_2023-02-20_at_3.30.47_PM.png">
+
+        <p>
+            You can now share this URL with anybody, and they'll be able to view your website as well!
         </p>
     </div>
 
